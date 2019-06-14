@@ -5,7 +5,7 @@
     <title>Rolls and Tables</title>
     <script>
         function rollTest () {
-            document.querySelector("output").textContent = "Something happens!";
+            document.getElementById("output").value = "Something happens!";
 
             window.onload = function () {
                 document.getElementById("rollTest").onclick = rollTest();
@@ -18,7 +18,7 @@ Here be the tables
 <button type="button" id="rollTest">Click the Button!</button>
 
 <label>Output:
-    <output></output>
+    <output id="output"></output>
 </label>
 </body>
 </html>
