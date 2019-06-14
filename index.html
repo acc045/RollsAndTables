@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Rolls and Tables</title>
+    <script>
+        function rollTest () {
+            document.querySelector("output").textContent = "Something happens!";
+
+            window.onload = function () {
+                document.getElementById("rollTest").onclick = rollTest();
+            };
+        }
+    </script>
 </head>
 <body>
 Here be the tables
